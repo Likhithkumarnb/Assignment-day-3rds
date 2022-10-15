@@ -1,0 +1,78 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "collapsed_sections": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VUIdGJhxcf8r",
+        "outputId": "a8e4691e-f7ef-4bf2-a93b-9789179c2974"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[[ 1  2]\n",
+            "  [ 5  6]]\n",
+            "\n",
+            " [[ 3  4]\n",
+            "  [ 8 17]]]\n"
+          ]
+        }
+      ],
+      "source": [
+        "#sort\n",
+        "import numpy as np\n",
+        "arr=np.array([[[1,2],[6,5]],[[3,4],[17,8]]])\n",
+        "arr.ndim\n",
+        "print(np.sort(arr))"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#search\n",
+        "import numpy as np\n",
+        "arr=np.array([[[4,2],[3,4]],[[5,4],[7,8]]])\n",
+        "arr\n",
+        "x=np.where(arr == 4)\n",
+        "print(x)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PMZN6nKOd-i4",
+        "outputId": "1f3238e6-c7f6-4ba9-cf1b-29aa7310ca23"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(array([0, 0, 1]), array([0, 1, 0]), array([0, 1, 1]))\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
